@@ -1,0 +1,248 @@
+/* ------------------------------------------------------------------------- */
+/* General Styles */
+/* ------------------------------------------------------------------------- */
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* ------------------------------------------------------------------------- */
+/* Header */
+/* ------------------------------------------------------------------------- */
+
+header {
+  text-align: center; /* Centers the nav bar */
+  padding: 30px 0;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Centers the navigation */
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 5px 10px;
+}
+
+nav ul li a.active {
+  color: blue;
+}
+
+
+/* ------------------------------------------------------------------------- */
+/* Intro Section */
+/* ------------------------------------------------------------------------- */
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 10px;
+  padding: 50px;
+}
+
+/* Profile Picture Adjustments */
+.profile-pic {
+  width: 200px; /* Set a reasonable size */
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Style for the Name Under the Photo */
+.intro h1 {
+  margin: 10px 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Social Links */
+.social-links {
+  margin-top: 15px;
+  display: flex;  /* Added: enables flexbox */
+  justify-content: center;  /* Added: centers items horizontally */
+  gap: 20px;  /* Added: creates equal spacing between icons */
+}
+
+.social-links a {
+  color: #333;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: #007bff;
+}
+
+.intro-text {
+  margin-top: 20px;
+  font-size: 16px;
+  max-width: 40%;
+}
+
+/* ------------------------------------------------------------------------- */
+/* Footer */
+/* ------------------------------------------------------------------------- */
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #ffffff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 12px;
+  color: #666666;
+}
+
+footer div:first-child {
+  padding-top: 5px;  /* Upper padding for first div */
+  margin: 0;
+}
+
+footer div:last-child {
+  padding-bottom: 5px;  /* Lower padding for second div */
+  margin: 0;
+}
+
+
+/* ------------------------------------------------------------------------- */
+/* Mobile screen adjustments */
+/* ------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+ 
+/* Stack navigation on small screens */
+  nav ul {
+    gap: 10px; /* Reduce spacing between links */
+  }
+
+/* Scale image */
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+  }
+
+/* Improve text readability */
+  .intro-text {
+    max-width: 90%; /* Prevents text from stretching too wide */
+  }
+
+}
+
+@media (max-width: 600px) {
+
+/* Social wrapping */
+  .social-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .social-links a {
+        font-size: 20px; /* Slightly smaller icons */
+        margin: 5px; /* Adds space */
+    }
+
+}
+
+/* ------------------------------------------------------------------------- */
+/* Research Section */
+/* ------------------------------------------------------------------------- */
+.research-section {
+  width: 40%;
+  margin: 0 auto;  /* Centers the section */
+  padding: 20px;
+}
+
+.research-section h2 {
+  border-bottom: 1px solid #666;  /* Adds line under headings */
+  padding-bottom: 10px;  /* Space between text and line */
+  /* padding-left: 20px;    Left padding for the text */
+  margin-top: 30px;      /* Space between sections */
+}
+
+@media (max-width: 768px) {
+/* Improve text readability */
+.research-section {
+  width: 80%;
+}
+
+}
+
+
+/* ------------------------------------------------------------------------- */
+/* Paper Entries */
+/* ------------------------------------------------------------------------- */
+.paper-entry {
+  margin-bottom: 30px;
+  padding-left: 20px;
+}
+
+.paper-title {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.paper-title a {
+  color: #333;
+  text-decoration: none;
+}
+
+.paper-title a:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.paper-authors {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.paper-abstract {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  margin-top: 10px;
+}
+
+.paper-resources {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+.paper-resources a {
+  color: #666;
+  text-decoration: none;
+  margin-right: 15px;  /* Space between links */
+}
+
+.paper-resources a:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
