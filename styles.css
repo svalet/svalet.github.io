@@ -102,6 +102,18 @@ nav ul li a.active {
   margin-top: 20px;
   font-size: 16px;
   max-width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro-text h2 {
+  color: #333333;
+  margin-bottom: 1.5rem;
+}
+
+.intro-text p {
+  line-height: 1.6;
+  margin: 0;
 }
 
 /* ------------------------------------------------------------------------- */
