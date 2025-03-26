@@ -2,6 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="
+		default-src 'self';
+		style-src 'self' https://cdnjs.cloudflare.com https://fonts.googleapis.com;
+		font-src https://fonts.gstatic.com;
+		img-src 'self';
+		script-src 'self';"
+    >
+	<meta http-equiv="X-Frame-Options" content="DENY">
+	<meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=(), payment=(), usb=()">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sebastian Valet - Personal Website</title>
     <link rel="stylesheet" href="styles.css">
@@ -9,94 +18,92 @@
 </head>
 <body>
 
-  <header>
+<header>
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="research.html" class="active">Research</a></li>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="research.html" class="active">Research</a></li>
 			<li><a href="https://drive.google.com/file/d/19f35dd1VGYXEj8LRYNrMO6-q_QxLmsMC/view">CV</a></li>
-        </ul>
-    </nav>
-  </header>
+		</ul>
+	</nav>
+</header>
 
-  <main>
-    <div class="research-section">
-      <h2>Working Papers</h2>
+<main>
+	<div class="research-section">
+		<h2>Working Papers</h2>
 
-      <div class="papers-list">
-        <div class="paper-entry">
-          <div class="paper-title">
-            <a href="https://ftp.zew.de/pub/zew-docs/dp/dp25015.pdf">Competition among digital services: Evidence from the 2021 Meta outage</a>
-          </div>
-          <div class="paper-authors">
-            (with Dominik Rehse)
-          </div>
-          <div class="paper-abstract">
-            On October 4, 2021, all services provided by Meta Platforms, Inc. (then Facebook, Inc.) became unavailable unexpectedly for all its worldwide users for a period of about six hours.
-            We use detailed high‐frequency tracking data from smartphones, tablets and desktop computers of thousands of Meta users from Spain and the United States to study their
-            behavioral responses during the outage. We find (1) the strongest substitution occurs within social media and messaging services, (2) evidence of substitution across service
-            categories, (3) substitution patterns that vary across demographic groups, (4) substantially higher substitution rates among multi‐homers, (5) substitution rates that increase
-            over the course of the outage, (6) distinct differences in substitution patterns between countries, and (7) increased usage of non‐Meta digital services after the outage. To our
-            knowledge, this study presents the first comprehensive revealed‐preference analysis of substitution patterns when an entire user population simultaneously seeks alternatives
-            to major digital services.
-          </div>
-          <!-- <div class="paper-resources">
-            <a href="path/to/data">data</a>
-            <a href="path/to/code">code</a>
-            <a href="path/to/preregistration">pre-registration</a>
-          </div> -->
-        </div>
+		<div class="papers-list">
+			<div class="paper-entry">
+				<div class="paper-title">
+					<a href="https://ftp.zew.de/pub/zew-docs/dp/dp25015.pdf" target="_blank" rel="noopener noreferrer">
+						Competition among digital services: Evidence from the 2021 Meta outage
+					</a>
+				</div>
+				<div class="paper-authors">
+					(with Dominik Rehse)
+				</div>
+				<div class="paper-abstract">
+					On October 4, 2021, all services provided by Meta Platforms, Inc. (then Facebook, Inc.) became unavailable unexpectedly for all its worldwide users for a period of about six hours. We use detailed high‐frequency tracking data from smartphones, tablets and desktop computers of thousands of Meta users from Spain and the United States to study their behavioral responses during the outage. We find (1) the strongest substitution occurs within social media and messaging services, (2) evidence of substitution across service categories, (3) substitution patterns that vary across demographic groups, (4) substantially higher substitution rates among multi‐homers, (5) substitution rates that increase over the course of the outage, (6) distinct differences in substitution patterns between countries, and (7) increased usage of non‐Meta digital services after the outage. To our knowledge, this study presents the first comprehensive revealed‐preference analysis of substitution patterns when an entire user population simultaneously seeks alternatives
+					to major digital services.
+				</div>
+				<!-- <div class="paper-resources">
+					<a href="path/to/data">data</a>
+					<a href="path/to/code">code</a>
+					<a href="path/to/preregistration">pre-registration</a>
+				</div> -->
+			</div>
+		</div>
       
-      <h2>Work in Progress</h2>
-      <div class="wip-list">
+		<h2>Work in Progress</h2>
+		<div class="wip-list">
 
-        <div class="paper-entry">
-          <div class="paper-title">
-            <!-- <a href="path/to/another-paper.pdf">Introspection Machines</a> -->
-            Introspection Machines
-          </div>
-          <div class="paper-authors">
-            (solo-authored)
-          </div>
-          <!--<div class="paper-abstract">
-            Abstract text goes here...
-          </div> -->
-        </div>
+			<div class="paper-entry">
+				<div class="paper-title">
+					<!-- <a href="path/to/another-paper.pdf">Introspection Machines</a> -->
+					Introspection Machines
+				</div>
+				<div class="paper-authors">
+					(solo-authored)
+				</div>
+				<!--<div class="paper-abstract">
+					Abstract text goes here...
+				</div> -->
+			</div>
 
-        <div class="paper-entry">
-          <div class="paper-title">
-            <!-- <a href="path/to/another-paper.pdf">The effects of LLM adoption on human expertise</a> -->
-            Adoption of large language models and the demand for human expertise
-          </div>
-          <div class="paper-authors">
-            (with Johannes Walter)
-          </div>
-          <!--<div class="paper-abstract">
-            Abstract text goes here...
-          </div> -->
-        </div>
-        <div class="paper-entry">
-          <div class="paper-title">
-            <!-- <a href="path/to/another-paper.pdf">The effects of LLM adoption on human expertise</a> -->
-            Turing markets: Market designs for testing large language models
-          </div>
-          <div class="paper-authors">
-            (with Dominik Rehse and Johannes Walter)
-          </div>
-          <!--<div class="paper-abstract">
-            Abstract text goes here...
-          </div> -->
-        </div>
+			<div class="paper-entry">
+				<div class="paper-title">
+					<!-- <a href="path/to/another-paper.pdf">The effects of LLM adoption on human expertise</a> -->
+					Adoption of large language models and the demand for human expertise
+				</div>
+				<div class="paper-authors">
+					(with Johannes Walter)
+				</div>
+				<!--<div class="paper-abstract">
+					Abstract text goes here...
+				</div> -->
+			</div>
+			
+			<div class="paper-entry">
+				<div class="paper-title">
+					<!-- <a href="path/to/another-paper.pdf">The effects of LLM adoption on human expertise</a> -->
+					Turing markets: Market designs for testing large language models
+				</div>
+				<div class="paper-authors">
+					(with Dominik Rehse and Johannes Walter)
+				</div>
+				<!--<div class="paper-abstract">
+					Abstract text goes here...
+				</div> -->
+			</div>
+		</div>
+	</div>
 
-      </div>
-      </div>
-    </div>
+</main>
 
-  </main>
+<footer>
+	<div>&copy; Sebastian Valet 2025.</div>
+	<div>Content available under <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="nofollow noopener noreferrer">CC BY-NC 4.0</a> unless otherwise noted.</div>
+</footer>
 
-    <footer>
-        <div>&copy; Sebastian Valet 2025.</div>
-        <div>Content available under <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a> unless otherwise noted.</div>
-    </footer>
 </body>
 </html>
