@@ -4,3 +4,5 @@ Crawl-delay: 10
 
 # Protect files directory
 Disallow: /files/
+
+Sitemap: https://svalet.github.io/sitemap.xml
