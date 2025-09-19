@@ -61,7 +61,7 @@ nav ul li a.active {
   flex-direction: column;
   text-align: center;
   margin-top: 10px;
-  padding: 50px;
+  padding: 50px 50px 10px 50px; /* top right bottom left */
 }
 
 /* Profile Picture Adjustments */
