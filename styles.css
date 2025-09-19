@@ -13,7 +13,7 @@ body {
 /* Main Content */
 /* ------------------------------------------------------------------------- */
 main {
-  padding-bottom: 80px; /* Ensures space above fixed footer */
+  padding-bottom: 30px; /* Ensures space above fixed footer */
 }
 
 
@@ -121,7 +121,7 @@ nav ul li a.active {
 
 .intro-text p {
   line-height: 1.6;
-  margin: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 /* ------------------------------------------------------------------------- */
